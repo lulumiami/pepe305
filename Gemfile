@@ -46,5 +46,7 @@ group :development, :test do
 
 end
 
+gem 'devise'
+
   #added after the scaffolding
 gem 'rails_12factor'
