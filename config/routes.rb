@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  root to: "home#index"
   devise_for :users
   resources :reviews
   resources :products
+
+  # get '/' => 'pages#splash', as: :magic
+  # request 'url' connect to 'controller#action', helper method whatever_path
+
+  root 'pages#splash'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

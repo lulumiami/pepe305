@@ -4,11 +4,16 @@
   <strong>Comment:</strong>
   <%= @review.comment %>
 </p>
-
 <p>
   <strong>Product:</strong>
   <%= @review.product.name rescue nil %>
 </p>
+<p>
+  <strong>User:</strong>
+  <%= @review.user.email rescue nil %>
+</p>
+
+
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
 <% if @review.product.nil? %>
