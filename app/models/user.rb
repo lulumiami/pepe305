@@ -5,5 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :reviews
   # user.reviews
+
+  # def 
+  # 	if # if user = admin, then direct to new product page
   
 end
