@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # get '/' => 'pages#splash', as: :magic
   # request 'url' connect to 'controller#action', helper method whatever_path
 
-  root 'pages#splash'
+  root 'products#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

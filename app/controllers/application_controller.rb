@@ -7,9 +7,16 @@ class ApplicationController < ActionController::Base
 #   	stored_location_for(resource) || 
 #   	if resource.is_a?(User &&) resource.
 
-def configure_permitted_parameters
-	[:sign_up, :account_update].each do |action|
+	def configure_permitted_parameters
+		[:sign_up, :account_update].each do |action|
 		devise_parameter_sanitizer.for(action).push(:admin)
-	end
-end	
+		end
+	end	
+
+	# def after_sign_in_path_for(user)
+	# if current_user.admin?
+	# 	<%= link_to "Admin Only", new_user_session_path %>
+  # do something
+# end
+
 end
