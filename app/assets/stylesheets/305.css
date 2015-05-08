@@ -1,0 +1,41 @@
+nav.navbar {
+	margin: 0;
+	padding: 10;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.navbar-brand {
+    padding: 0;      
+}
+
+.nav li a:focus, .nav li a:hover {
+	background-color: transparent;
+}
+
+.navbar-brand img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 70px;
+}
+
+.nav_buttons {
+	width: 100px;
+	height: 50px;
+	background-color: transparent;
+}
+
+.banner {
+	height: 60%;
+	width: 100%;
+	margin-top: 100px;
+}
+
+.about {
+	margin-top: 30px;
+}
+
+#contact {
+	background-image: url(map.png);
+}
+
